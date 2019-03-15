@@ -1,6 +1,6 @@
 # **LennonLib**使用帮助
 ### 概述
-LennonLib是基于[XDroidMvp](https://github.com/limedroid/XDroidMvp)二次简单封装的项目框架,并集成了阿里[ARouter](https://github.com/alibaba/ARouter)
+LennonLib是基于[XDroidMvp](https://github.com/limedroid/XDroidMvp)二次简单封装的项目框架,并集成了阿里[ARouter](https://github.com/alibaba/ARouter),使用AndroidX支持库
 ### 使用注意事项
 ###### 1、Application
 食用时，请自定义Application，并继承BaseApplication
@@ -25,3 +25,8 @@ retrofit实现网络请求的interface不能使用kotlin来写，部分情况下
 集成jpush和小米推送
 ###### 10、视频录制（record)待完善
 
+###### 11、图片缩放([SubsamplingScaleImageView](https://github.com/davemorrissey/subsampling-scale-image-view))(AndroidX适配)
+
+###### 12、[xrecycler](https://github.com/limedroid/ARecyclerView)(AndroidX适配)
+
+###### 13、voicerecorder 语音录制
