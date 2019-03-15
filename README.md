@@ -25,5 +25,3 @@ retrofit实现网络请求的interface不能使用kotlin来写，部分情况下
 集成jpush和小米推送
 ###### 10、视频录制（record)待完善
 
-
-###### Demo   [LennonLibTest](https://github.com/lennon19940306/LennonLibTest)
