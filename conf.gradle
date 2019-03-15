@@ -1,0 +1,93 @@
+ext {
+
+    android = [
+            compileSdkVersion : 28,
+            buildToolsVersion : "28.0.3",
+            minSdkVersion     : 16,
+            targetSdkVersion  : 28,
+            applicationId     : "com.lennon.lib",
+            versionCode       : 1,
+            versionName       : '1.0.0',
+
+//            VSupportSdk       : '27.1.1',
+            VRetrofitSdk      : "2.2.0",
+            VOkhttp           : "3.4.2",
+            VRxlifecycle      : "3.0.0",
+            latest_integration: "latest.integration",
+
+            jPush_appKey      : "38c285d7254da04ea2199585"
+    ]
+    dependencies = [
+
+            "floatingactionbutton"       : "com.melnykov:floatingactionbutton:${android["latest_integration"]}",
+
+
+            "zxing_android"              : "com.google.zxing:android-core:${android["latest_integration"]}",
+            "zxing"                      : "com.google.zxing:core:${android["latest_integration"]}",
+
+            "wechart_sdk"                : "com.tencent.mm.opensdk:wechat-sdk-android-with-mta:${android["latest_integration"]}",
+            "mi_push"                    : "com.xiaomi.sdk:push:${android["latest_integration"]}",
+            "jiguang_janalytics"         : "cn.jiguang.sdk:janalytics:${android["latest_integration"]}",
+            "jiguang_jcore"              : "cn.jiguang.sdk:jcore:${android["latest_integration"]}",
+            "jiguang_jpush"              : "cn.jiguang.sdk:jpush:${android["latest_integration"]}",
+
+            "arouter-api"                : "com.alibaba:arouter-api:${android["latest_integration"]}",
+            "arouter-compiler"           : "com.alibaba:arouter-compiler:${android["latest_integration"]}",
+
+
+            "statusbaruitl"              : "com.jaeger.statusbaruitl:library:${android["latest_integration"]}",
+            "qiujuer-ui"                 : "net.qiujuer.genius:ui:${android["latest_integration"]}",
+            "kotlin"                     : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
+            "PersistentCookieJar"        : "com.github.franmontiel:PersistentCookieJar:${android["latest_integration"]}",
+
+
+            "eventbus"                   : "org.greenrobot:eventbus:${android["latest_integration"]}",
+            "glide"                      : "com.github.bumptech.glide:glide:${android["latest_integration"]}",
+            "glide-compiler"             : "com.github.bumptech.glide:compiler:${android["latest_integration"]}",
+            "picasso"                    : "com.squareup.picasso:picasso:${android["latest_integration"]}",
+            "avi-loading"                : "com.wang.avi:library:${android["latest_integration"]}",
+            "rxbus"                      : "com.blankj:rxbus:${android["latest_integration"]}",
+
+            "gson"                       : "com.google.code.gson:gson:${android["latest_integration"]}",
+            "rxandroid"                  : "io.reactivex.rxjava2:rxandroid:${android["latest_integration"]}",
+            "rxjava"                     : "io.reactivex.rxjava2:rxjava:${android["latest_integration"]}",
+            "retrofit"                   : "com.squareup.retrofit2:retrofit:${android["VRetrofitSdk"]}",
+            "retrofit-converter-gson"    : "com.squareup.retrofit2:converter-gson:${android["VRetrofitSdk"]}",
+            "retrofit-adapter-rxjava"    : "com.squareup.retrofit2:adapter-rxjava2:${android["VRetrofitSdk"]}",
+            "okhttp3-logging-interceptor": "com.squareup.okhttp3:logging-interceptor:${android["VOkhttp"]}",
+            "okhttp3"                    : "com.squareup.okhttp3:okhttp:${android["VOkhttp"]}",
+
+            "rxpermissions"              : "com.tbruyelle.rxpermissions2:rxpermissions:${android["latest_integration"]}",
+
+            "canary-debug"               : "com.squareup.leakcanary:leakcanary-android:${android["latest_integration"]}",
+            "canary-release"             : "com.squareup.leakcanary:leakcanary-android-no-op:${android["latest_integration"]}",
+            "lovedise_permissiongen"     : "com.lovedise:permissiongen:${android["latest_integration"]}",
+
+            //"cardview"                   : "com.android.support:cardview-v7:${android["latest_integration"]}",
+            "cardview"                   : "androidx.cardview:cardview:${android["latest_integration"]}",
+            //"constraint-layout"          : "com.android.support.constraint:constraint-layout:${android["latest_integration"]}",
+            "constraint-layout"          : "androidx.constraintlayout:constraintlayout:${android["latest_integration"]}",
+            //"multidex"                   : "com.android.support:multidex:${android["latest_integration"]}",
+            "multidex"                   : "androidx.multidex:multidex:${android["latest_integration"]}",
+
+            //"appcompat-v7"               : "com.android.support:appcompat-v7:${android["VSupportSdk"]}",
+            "appcompat-v7"               : "androidx.appcompat:appcompat:${android["latest_integration"]}",
+            //"support-v4"                 : "com.android.support:support-v4:${android["VSupportSdk"]}",
+            "support-v4"                 : "androidx.legacy:legacy-support-v4:${android["latest_integration"]}",
+            //"design"                     : "com.android.support:design:${android["VSupportSdk"]}",
+            "design"                     : "com.google.android.material:material:${android["latest_integration"]}",
+            //"annotations"                : "com.android.support:support-annotations:${android["VSupportSdk"]}",
+            "annotations"                : "androidx.annotation:annotation:${android["latest_integration"]}",
+            //"recyclerview-v7"            : "com.android.support:recyclerview-v7:${android["VSupportSdk"]}",
+            "recyclerview-v7"            : "androidx.recyclerview:recyclerview:${android["latest_integration"]}",
+
+            //"rxlifecycle"                : "com.trello.rxlifecycle2:rxlifecycle:${android["VRxlifecycle"]}",
+            "rxlifecycle"                : "com.trello.rxlifecycle3:rxlifecycle:${android["VRxlifecycle"]}",
+            //"rxlifecycle-android"        : "com.trello.rxlifecycle2:rxlifecycle-android:${android["VRxlifecycle"]}",
+            "rxlifecycle-android"        : "com.trello.rxlifecycle3:rxlifecycle-android:${android["VRxlifecycle"]}",
+            //"rxlifecycle-components"     : "com.trello.rxlifecycle2:rxlifecycle-components:${android["VRxlifecycle"]}",
+            "rxlifecycle-components"     : "com.trello.rxlifecycle3:rxlifecycle-components:${android["VRxlifecycle"]}",
+            "XStateController"           : "com.github.limedroid:XStateController:v1.1.1",
+    ]
+
+}

@@ -1,0 +1,10 @@
+include ':LennonLib.mvp', ':LennonLib.nativelogger', ':LennonLib.utill', ':LennonLib.push', ':LennonLib.speech', ':LennonLib.zxing', ':LennonLib.record', ':LennonLib.xrecycler', ':voicerecorder', ':PhotoView', ':SubsamplingScaleImageView'
+project(':LennonLib.mvp').projectDir = new File('../LennonLib/mvp')
+project(':LennonLib.nativelogger').projectDir = new File('../LennonLib/nativelogger')
+include ':app'
+project(':LennonLib.utill').projectDir = new File('../LennonLib/utill')
+project(':LennonLib.zxing').projectDir = new File('../LennonLib/zxing')
+project(':LennonLib.push').projectDir = new File('../LennonLib/push')
+project(':LennonLib.speech').projectDir = new File('../LennonLib/speech')
+project(':LennonLib.record').projectDir = new File('../LennonLib/record')
+project(':LennonLib.xrecycler').projectDir = new File('../LennonLib/xrecycler')

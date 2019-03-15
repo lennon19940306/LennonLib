@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">speech</string>
+    <string formatted="false" name="tts_toast_format">缓冲进度为%d%%，播放进度为%d%%</string>
+</resources>

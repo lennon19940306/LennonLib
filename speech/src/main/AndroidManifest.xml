@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lennon.speech" >
+    <application >
+        <service
+            android:name="com.lennon.speech.SpeechService"
+            android:persistent="true"
+            android:priority="1000" />
+        <!--<meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>-->
+        <!--<meta-data android:name="JPUSH_APPKEY" android:value="${JPUSH_APPKEY}" /> &lt;!&ndash;  </>值来自开发者平台取得的AppKey&ndash;&gt;-->
+    </application>
+</manifest>

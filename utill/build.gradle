@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        multiDexEnabled true
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME          : rootProject.ext.android.applicationId,
+                JPUSH_APPKEY           : rootProject.ext.android.jPush_appKey, //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL          : "developer-default", //暂时填写默认值即可.
+                GRADLE_APP_PACKAGE_NAME: rootProject.ext.android.applicationId
+        ]
+    }
+}
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api project(path: ':LennonLib.mvp')
+    api rootProject.ext.dependencies["wechart_sdk"]
+    api rootProject.ext.dependencies["jiguang_jcore"]
+//    api rootProject.ext.dependencies["statusbaruitl"]
+}
