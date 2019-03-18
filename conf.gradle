@@ -21,7 +21,6 @@ ext {
 
             "floatingactionbutton"       : "com.melnykov:floatingactionbutton:${android["latest_integration"]}",
 
-
             "zxing_android"              : "com.google.zxing:android-core:${android["latest_integration"]}",
             "zxing"                      : "com.google.zxing:core:${android["latest_integration"]}",
 
@@ -87,6 +86,7 @@ ext {
             "rxlifecycle-android"        : "com.trello.rxlifecycle3:rxlifecycle-android:${android["VRxlifecycle"]}",
             //"rxlifecycle-components"     : "com.trello.rxlifecycle2:rxlifecycle-components:${android["VRxlifecycle"]}",
             "rxlifecycle-components"     : "com.trello.rxlifecycle3:rxlifecycle-components:${android["VRxlifecycle"]}",
+
             "XStateController"           : "com.github.limedroid:XStateController:v1.1.1",
     ]
 
