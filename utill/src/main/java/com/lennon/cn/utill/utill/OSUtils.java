@@ -138,7 +138,7 @@ public class OSUtils {
                 rom = ROM.EMUI;
                 if (buildProperties.containsKey(KEY_EMUI_VERSION)) {
                     String versionStr = buildProperties.getProperty(KEY_EMUI_VERSION);
-                    Matcher matcher = Pattern.compile("EmotionUI_([\\d.]+)").matcher(versionStr); // EmotionUI_3.0
+                    @SuppressWarnings("AlibabaAvoidPatternCompileInMethod") Matcher matcher = Pattern.compile("EmotionUI_([\\d.]+)").matcher(versionStr); // EmotionUI_3.0
                     if (!TextUtils.isEmpty(versionStr) && matcher.find()) {
                         try {
                             String version = matcher.group(1);
@@ -154,7 +154,7 @@ public class OSUtils {
                 rom = ROM.Flyme;
                 if (buildProperties.containsKey(KEY_DISPLAY_ID)) {
                     String versionStr = buildProperties.getProperty(KEY_DISPLAY_ID);
-                    Matcher matcher = Pattern.compile("Flyme[^\\d]*([\\d.]+)[^\\d]*").matcher(versionStr); // Flyme OS 4.5.4.2U
+                    @SuppressWarnings("AlibabaAvoidPatternCompileInMethod") Matcher matcher = Pattern.compile("Flyme[^\\d]*([\\d.]+)[^\\d]*").matcher(versionStr); // Flyme OS 4.5.4.2U
                     if (!TextUtils.isEmpty(versionStr) && matcher.find()) {
                         try {
                             String version = matcher.group(1);
@@ -171,7 +171,7 @@ public class OSUtils {
                 rom = ROM.ColorOS;
                 if (buildProperties.containsKey(KEY_COLOROS_ROM_VERSION)) {
                     String versionStr = buildProperties.getProperty(KEY_COLOROS_ROM_VERSION);
-                    Matcher matcher = Pattern.compile("ColorOS([\\d.]+)").matcher(versionStr); // ColorOS2.1
+                    @SuppressWarnings("AlibabaAvoidPatternCompileInMethod") Matcher matcher = Pattern.compile("ColorOS([\\d.]+)").matcher(versionStr); // ColorOS2.1
                     if (!TextUtils.isEmpty(versionStr) && matcher.find()) {
                         try {
                             String version = matcher.group(1);
@@ -203,7 +203,7 @@ public class OSUtils {
                 rom = ROM.EUI;
                 if (buildProperties.containsKey(KEY_EUI_VERSION)) {
                     String versionStr = buildProperties.getProperty(KEY_EUI_VERSION);
-                    Matcher matcher = Pattern.compile("([\\d.]+)[^\\d]*").matcher(versionStr); // 5.9.023S
+                    @SuppressWarnings("AlibabaAvoidPatternCompileInMethod") Matcher matcher = Pattern.compile("([\\d.]+)[^\\d]*").matcher(versionStr); // 5.9.023S
                     if (!TextUtils.isEmpty(versionStr) && matcher.find()) {
                         try {
                             String version = matcher.group(1);
@@ -219,7 +219,7 @@ public class OSUtils {
                 rom = ROM.AmigoOS;
                 if (buildProperties.containsKey(KEY_DISPLAY_ID)) {
                     String versionStr = buildProperties.getProperty(KEY_DISPLAY_ID);
-                    Matcher matcher = Pattern.compile("amigo([\\d.]+)[a-zA-Z]*").matcher(versionStr); // "amigo3.5.1"
+                    @SuppressWarnings("AlibabaAvoidPatternCompileInMethod") Matcher matcher = Pattern.compile("amigo([\\d.]+)[a-zA-Z]*").matcher(versionStr); // "amigo3.5.1"
                     if (!TextUtils.isEmpty(versionStr) && matcher.find()) {
                         try {
                             String version = matcher.group(1);

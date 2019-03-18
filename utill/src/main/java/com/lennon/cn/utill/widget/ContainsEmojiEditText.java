@@ -117,13 +117,13 @@ public class ContainsEmojiEditText extends EditText {
     }
 
     public static boolean isEmoji(String string) {
-        Pattern p = Pattern.compile("/[\u1F60-\u1F64]|[\u2702-\u27B0]|[\u1F68-\u1F6C]|[\u1F30-\u1F70]|[\u2600-\u26ff]/g");
+        @SuppressWarnings("AlibabaAvoidPatternCompileInMethod") Pattern p = Pattern.compile("/[\u1F60-\u1F64]|[\u2702-\u27B0]|[\u1F68-\u1F6C]|[\u1F30-\u1F70]|[\u2600-\u26ff]/g");
         Matcher m = p.matcher(string);
         return m.matches();
     }
 
     public boolean isEmoji2(String string) {
-        Pattern p = Pattern.compile("[\ud83c\udc00-\ud83c\udfff]|[\ud83d\udc00-\ud83d\udfff]|[\u2600-\u27ff]",
+        @SuppressWarnings("AlibabaAvoidPatternCompileInMethod") Pattern p = Pattern.compile("[\ud83c\udc00-\ud83c\udfff]|[\ud83d\udc00-\ud83d\udfff]|[\u2600-\u27ff]",
                 Pattern.UNICODE_CASE | Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(string);
         return m.find();

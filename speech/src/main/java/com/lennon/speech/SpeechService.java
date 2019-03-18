@@ -54,7 +54,7 @@ public class SpeechService extends Service {
         }
 
         private String getNum(String s) {
-            Pattern compile = Pattern.compile("\\d+\\.\\d+");
+            @SuppressWarnings("AlibabaAvoidPatternCompileInMethod") Pattern compile = Pattern.compile("\\d+\\.\\d+");
             Matcher matcher = compile.matcher(s);
             if (!matcher.find()) {
                 return "0.00";
