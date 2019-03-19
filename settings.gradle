@@ -1,4 +1,4 @@
-include ':LennonLib.mvp', ':LennonLib.nativelogger', ':LennonLib.utill', ':LennonLib.push', ':LennonLib.speech', ':LennonLib.zxing', ':LennonLib.record', ':LennonLib.xrecycler', ':voicerecorder', ':PhotoView', ':SubsamplingScaleImageView'
+include ':LennonLib.mvp', ':LennonLib.nativelogger', ':LennonLib.utill', ':LennonLib.push', ':LennonLib.speech', ':LennonLib.zxing', ':LennonLib.record', ':LennonLib.xrecycler', ':voicerecorder', ':PhotoView', ':SubsamplingScaleImageView', ':app'
 project(':LennonLib.mvp').projectDir = new File('../LennonLib/mvp')
 project(':LennonLib.nativelogger').projectDir = new File('../LennonLib/nativelogger')
 include ':app'
